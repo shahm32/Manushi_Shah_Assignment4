@@ -1,0 +1,16 @@
+<h2>Edit Information</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="streetName">Street Name</label>
+  <input id="streetName" [(ngModel)]="user.streetName" name="streetName" required />
+  
+  <label for="postalCode">Postal Code</label>
+  <input id="postalCode" [(ngModel)]="user.postalCode" name="postalCode" required />
+
+  <label for="city">City</label>
+  <input id="city" [(ngModel)]="user.city" name="city" required />
+
+  <label for="phoneNumber">Phone Number</label>
+  <input id="phoneNumber" [(ngModel)]="user.phoneNumber" name="phoneNumber" required />
+
+  <button type="submit">Save</button>
+</form>
